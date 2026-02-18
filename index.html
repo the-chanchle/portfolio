@@ -5,18 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Omkar Chanchle</title>
-  <link rel="icon" type="image/png" href="fav-icon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/images/fav-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'crt-green': '#00ff41',
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-  <button id="theme-toggle">Night Mode</button>
-  <div class="centered-container">
-    <div class="resume-border" id="resume-container">
+<body
+  class="bg-white dark:bg-[#121212] text-black dark:text-[#00ff41] min-h-screen p-4 md:p-8 flex justify-center items-start transition-colors duration-300">
+  <button id="theme-toggle"
+    class="fixed bottom-6 right-6 md:top-4 md:right-4 md:bottom-auto bg-white dark:bg-[#121212] text-black dark:text-[#00ff41] border-2 border-black dark:border-[#00ff41] px-4 py-2 font-bold shadow-[3px_3px_0px_#000] dark:shadow-[3px_3px_0px_#00ff41] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-[2px_2px_0px_#000] dark:hover:shadow-[2px_2px_0px_#00ff41] z-50 transition-all duration-300">
+    <span class="md:hidden text-lg" id="theme-toggle-icon">🌙</span>
+    <span class="hidden md:inline" id="theme-toggle-text">Night Mode</span>
+  </button>
+  <div class="w-full max-w-4xl flex flex-col items-center">
+    <div class="w-full retro-border p-6 md:p-8 bg-white dark:bg-[#121212] overflow-x-hidden" id="resume-container">
       <!-- Content will be injected by script.js -->
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #000000;
+    --shadow-color: #000000;
+}
+
+.dark {
+    --bg-color: #121212;
+    --text-color: #00ff41;
+    --border-color: #00ff41;
+    --shadow-color: #00ff41;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+/* Base styles for the "ASCII" look using Tailwind */
+.retro-border {
+    border: 2px solid var(--border-color);
+    box-shadow: 10px 10px 0px var(--shadow-color);
+}
+
+.retro-table-border {
+    border: 1px solid var(--border-color);
+}
+
+.retro-line-border {
+    border-bottom: 2px solid var(--border-color);
+}

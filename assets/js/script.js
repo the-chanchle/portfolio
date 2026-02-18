@@ -21,10 +21,9 @@ const RESUME = {
         { category: "Tools", items: "Git, GitHub, Docker, Linux, Ubuntu, Nginx, Apache, Postman" }
     ],
     experience: [
-        { role: "Founder", company: "<a href=\"https://theflynnlabs.com/\" target=\"_blank\" class=\"text-blue-600 dark:text-blue-400 hover:underline\">The Flynn Labs</a>", duration: "Jul 2025 - Present", location: "Surat, Gujarat" },
-        { role: "PHP Developer", company: "Bytespark Digital", duration: "Jun 2025 - Jun 2025", location: "Ahmedabad" },
-        { role: "PHP / Laravel Dev", company: "Vasundhara Info", duration: "Aug 2024 - Apr 2025", location: "Surat" },
-        { role: "PHP / Pimcore Dev", company: "Kash Info Sol", duration: "Oct 2023 - Jun 2024", location: "Surat" },
+        { role: "Founder", company: "<a href=\"https://theflynnlabs.com/\" target=\"_blank\" class=\"text-blue-600 dark:text-blue-400 hover:underline\">The Flynn Labs</a>", duration: "Jun 2025 - Present", location: "Surat, Gujarat" },
+        { role: "PHP / Laravel Dev", company: "Vasundhara Infotech", duration: "Aug 2024 - Apr 2025", location: "Surat" },
+        { role: "PHP / Pimcore Dev", company: "Kash Info Solution", duration: "Oct 2023 - Jun 2024", location: "Surat" },
         { role: "PHP / Node Dev", company: "Elance Solution", duration: "Jan 2021 - Sep 2023", location: "Surat" }
     ],
     projects: [

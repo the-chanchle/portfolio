@@ -12,23 +12,53 @@ const RESUME = {
             { label: "X", url: "https://x.com/chanchleomkar7" }
         ]
     },
-    summary: "PHP / Laravel Developer with 5 years of experience delivering production-grade web applications. Strong ownership across backend development, APIs, databases, and server infrastructure. Experience operating independently as a founder and consultant, owning systems end to end.",
+
+    summary: "Full Stack Developer specializing in PHP, Laravel, Node.js, and modern web technologies, with 5 years of experience delivering production grade web applications. Experienced in building and maintaining web applications, RESTful APIs, and database driven systems, with strong expertise in backend development, deployment, and server infrastructure. Proven ability to own projects end to end, from architecture and development to infrastructure, deployment, and ongoing maintenance. Experienced working independently as a founder and consultant, delivering reliable, scalable, and business focused solutions for clients across diverse industries.",
+
     skills: [
-        { category: "Languages", items: "PHP, JavaScript, SQL, HTML, CSS" },
+        { category: "Languages", items: "PHP, JavaScript, TypeScript, SQL, HTML, CSS" },
+        { category: "Backend", items: "Laravel, CodeIgniter, Node.js, Express.js, NestJS" },
+        { category: "Frontend", items: "React.js, Next.js, Vue.js, Livewire, Tailwind CSS, Alpine.js, jQuery" },
         { category: "Databases", items: "MySQL, PostgreSQL, MongoDB" },
-        { category: "Frameworks", items: "Laravel, CodeIgniter, Express.js, Vue.js, Livewire" },
-        { category: "Libraries", items: "jQuery, Alpine.js, Tailwind CSS" },
-        { category: "Tools", items: "Git, GitHub, Docker, Linux, Ubuntu, Nginx, Apache, Postman" }
+        { category: "Infrastructure", items: "Docker, Linux (Ubuntu), Dockploy, Nginx, Apache, VPS Management, SSL Setup" },
+        { category: "Development", items: "REST API Development, API Integration, Database Design, Query Optimization, Performance Optimization, AI Automation" }
     ],
+
     experience: [
-        { role: "Founder", company: "<a href=\"https://theflynnlabs.com/\" target=\"_blank\" class=\"text-blue-600 dark:text-blue-400 hover:underline\">The Flynn Labs</a>", duration: "Jun 2025 - Present", location: "Surat, Gujarat" },
-        { role: "PHP / Laravel Dev", company: "Vasundhara Infotech", duration: "Aug 2024 - Apr 2025", location: "Surat" },
-        { role: "PHP / Pimcore Dev", company: "Kash Info Solution", duration: "Oct 2023 - Jun 2024", location: "Surat" },
-        { role: "PHP / Node Dev", company: "Elance Solution", duration: "Jan 2021 - Sep 2023", location: "Surat" }
+        {
+            role: "Founder / Independent Full Stack Developer",
+            company: "<a href=\"https://theflynnlabs.com/\" target=\"_blank\" class=\"text-blue-600 dark:text-blue-400 hover:underline\">The Flynn Labs</a>",
+            duration: "Jul 2025 - Present",
+            location: "Surat, Gujarat"
+        },
+        {
+            role: "PHP / Laravel Developer",
+            company: "Vasundhara Infotech",
+            duration: "Aug 2024 - Apr 2025",
+            location: "Surat, Gujarat"
+        },
+        {
+            role: "PHP / Pimcore Developer",
+            company: "Kash Info Solutions Pvt. Ltd.",
+            duration: "Oct 2023 - Jun 2024",
+            location: "Surat, Gujarat"
+        },
+        {
+            role: "PHP / Laravel / Node Developer",
+            company: "Elance Solution",
+            duration: "Jan 2021 - Sep 2023",
+            location: "Surat, Gujarat"
+        }
     ],
+
     projects: [
-        { name: "Anatomy Learning Platform", tech: "Laravel, MySQL", desc: "Designed backend system for medical students. Built admin APIs." }
+        {
+            name: "Anatomy Learning Platform",
+            tech: "Laravel, MySQL, REST APIs",
+            desc: "Developed the backend system and administrative platform for a medical education application. Built REST APIs consumed by a Flutter mobile application and designed scalable database structures for educational content management."
+        }
     ]
+
 };
 
 // Component Utilities

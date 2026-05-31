@@ -64,7 +64,7 @@ const RESUME = {
 // Component Utilities
 const createRetroBox = (title, content) => {
     const section = document.createElement('section');
-    section.className = 'mb-8 103px bg-white dark:bg-transparent p-4 md:p-6';
+    section.className = 'mb-8 retro-border bg-white dark:bg-transparent p-4 md:p-6';
 
     if (title) {
         const titleEl = document.createElement('h2');

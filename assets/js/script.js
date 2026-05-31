@@ -28,7 +28,7 @@ const RESUME = {
         {
             role: "Founder / Independent Full Stack Developer",
             company: "<a href=\"https://theflynnlabs.com/\" target=\"_blank\" class=\"text-blue-600 dark:text-blue-400 hover:underline\">THE FLYNN LABS</a>",
-            duration: "Jul 2025 - Present",
+            duration: "Jun 2025 - Present",
             location: "Surat, Gujarat"
         },
         {

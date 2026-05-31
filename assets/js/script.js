@@ -27,7 +27,7 @@ const RESUME = {
     experience: [
         {
             role: "Founder / Independent Full Stack Developer",
-            company: "<a href=\"https://theflynnlabs.com/\" target=\"_blank\" class=\"text-blue-600 dark:text-blue-400 hover:underline\">The Flynn Labs</a>",
+            company: "<a href=\"https://theflynnlabs.com/\" target=\"_blank\" class=\"text-blue-600 dark:text-blue-400 hover:underline\">THE FLYNN LABS</a>",
             duration: "Jul 2025 - Present",
             location: "Surat, Gujarat"
         },
@@ -64,7 +64,7 @@ const RESUME = {
 // Component Utilities
 const createRetroBox = (title, content) => {
     const section = document.createElement('section');
-    section.className = 'mb-8 retro-border bg-white dark:bg-transparent p-4 md:p-6';
+    section.className = 'mb-8 103px bg-white dark:bg-transparent p-4 md:p-6';
 
     if (title) {
         const titleEl = document.createElement('h2');

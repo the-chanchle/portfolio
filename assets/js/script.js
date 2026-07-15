@@ -53,9 +53,16 @@ const RESUME = {
 
     projects: [
         {
-            name: "Anatomy Learning Platform",
-            tech: "Laravel, MySQL, REST APIs",
-            desc: "Developed the backend system and administrative platform for a medical education application. Built REST APIs consumed by a Flutter mobile application and designed scalable database structures for educational content management."
+            name: "DocumentGURU",
+            url: "https://documentguru.theflynnlabs.com",
+            tech: "Next.js (React 19), NestJS 11, TypeORM, PostgreSQL",
+            desc: "Full-stack LaTeX document builder for creating professional resumes and documents with real-time PDF generation. Implemented JWT + Google OAuth authentication with email verification, password reset, and welcome email flows via Resend. Built LaTeX-based PDF rendering engine with real-time preview and 4-section resume template system. Created SEO-optimized landing pages. Deployed on VPS with Docker Swarm, Traefik reverse proxy, and Dokploy CI/CD with zero-downtime rolling updates."
+        },
+        {
+            name: "THE FLYNN LABS",
+            url: "https://theflynnlabs.com",
+            tech: "Astro, Alpine.js, TypeScript, MySQL",
+            desc: "Personal developer portfolio and product showcase built with Astro, Alpine.js, TypeScript, MySQL, and npm workspaces in a monorepo architecture. Features responsive design, reusable shared components, scroll-aware navigation, SEO optimization, and a contact form with server-side validation. Containerized with Docker and deployed on Dokploy using multi-stage builds and production security hardening."
         }
     ]
 
@@ -178,12 +185,17 @@ function renderPortfolio() {
     ]));
 
     // 6. Projects
-    const projectContent = `
-        <div class="mb-2"><strong>${RESUME.projects[0].name}</strong></div>
-        <div class="mb-1 text-sm italic">Tech: ${RESUME.projects[0].tech}</div>
-        <div class="text-sm">${RESUME.projects[0].desc}</div>
-    `;
-    container.appendChild(createRetroBox("Latest Project", projectContent));
+    RESUME.projects.forEach(project => {
+        const projectName = project.url
+            ? `<a href="${project.url}" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">${project.name}</a>`
+            : `<strong>${project.name}</strong>`;
+        const projectContent = `
+            <div class="mb-2">${projectName}</div>
+            <div class="mb-1 text-sm italic">Tech: ${project.tech}</div>
+            <div class="text-sm">${project.desc}</div>
+        `;
+        container.appendChild(createRetroBox("Project", projectContent));
+    });
 
     // Footer
     const footer = document.createElement('div');
